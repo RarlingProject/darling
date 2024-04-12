@@ -11,6 +11,9 @@ static TISInputSourceRef g_lastKeyboardLayout = NULL;
 const CFStringRef kTISPropertyInputSourceLanguages = CFSTR("TISPropertyInputSourceLanguages");
 const CFStringRef kTISPropertyLocalizedName = CFSTR("TISPropertyLocalizedName");
 
+//Fix for RobloxPlayer
+const CFStringRef kTISNotifySelectedKeyboardInputSourceChanged = CFSTR("TISNotifySelectedKeyboardInputSourceChanged");
+
 static int verbose = 0;
 
 __attribute__((constructor))

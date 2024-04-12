@@ -24,6 +24,10 @@
 
 static int verbose = 0;
 
+//Fix for RobloxPlayer
+const NSString* GCControllerDidConnectNotification = @"GCControllerDidConnectNotification";
+const NSString* GCControllerDidDisconnectNotification = @"GCControllerDidDisconnectNotification";
+
 __attribute__((constructor))
 static void initme(void) {
     verbose = getenv("STUB_VERBOSE") != NULL;

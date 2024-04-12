@@ -20,8 +20,14 @@ const CFStringRef kSCConsoleSessionID			= CFSTR("kCGSSessionIDKey");			/* value 
 const CFStringRef kSCConsoleSessionSystemSafeBoot	= CFSTR("kCGSSessionSystemSafeBoot");		/* value is CFBoolean */
 const CFStringRef kSCConsoleSessionLoginwindowSafeLogin	= CFSTR("kCGSSessionLoginwindowSafeLogin");	/* value is CFBoolean */
 
+const CFStringRef kSCDynamicStorePropNetPrimaryInterface = CFSTR("kSCDynamicStorePropNetPrimaryInterface");
 const CFStringRef kSCCompAnyRegex = CFSTR("[^/]+");
 const CFStringRef kSCEntNetDNS = CFSTR("DNS");
+const CFStringRef kSCEntNetInterface = CFSTR("en0");
+const CFStringRef kSCNetworkInterfaceTypeEthernet = CFSTR("eth");
+const CFStringRef kSCNetworkInterfaceTypeIEEE80211 = CFSTR("non");
+const CFStringRef kSCPrefNetworkServices = CFSTR("non");
+const CFStringRef kSCPropNetInterfaceDeviceName = CFSTR("Broadcom BCM49202a");
 
 CFStringRef SCDynamicStoreKeyCreateNetworkGlobalEntity(CFAllocatorRef allocator, CFStringRef domain, CFStringRef entity)
 {

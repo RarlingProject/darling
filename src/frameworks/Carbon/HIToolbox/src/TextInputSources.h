@@ -11,6 +11,7 @@ typedef struct __TISInputSource* TISInputSourceRef;
 extern const CFStringRef kTISPropertyUnicodeKeyLayoutData;
 extern const CFStringRef kTISPropertyInputSourceLanguages;
 extern const CFStringRef kTISPropertyLocalizedName;
+extern const CFStringRef kTISNotifySelectedKeyboardInputSourceChanged;
 
 extern TISInputSourceRef TISCopyCurrentKeyboardLayoutInputSource(void);
 extern TISInputSourceRef TISCopyCurrentKeyboardInputSource(void);
